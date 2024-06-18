@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트위터로 공유하기</title>
+</head>
+<body>
+
+<!-- 트위터로 공유하기 버튼 -->
+<button onclick="shareOnTwitter()">트위터로 공유하기</button>
+
+<script>
+function shareOnTwitter() {
+    // 공유할 페이지 URL
+    var urlToShare = 'http://example.com'; // 여기에 원하는 페이지의 URL을 넣으세요
+
+    // 트위터 공유 URL
+    var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(urlToShare);
+
+    // 새 창에서 트위터 공유 페이지 열기
+    window.open(twitterShareUrl, '_blank');
+}
+</script>
+
+</body>
+</html>
+
+

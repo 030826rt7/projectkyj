@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이스북으로 공유하기</title>
+</head>
+<body>
+
+<!-- 페이스북 공유하기 버튼 -->
+<button onclick="shareOnFacebook()">페이스북으로 공유하기</button>
+
+<script>
+function shareOnFacebook() {
+    // 공유할 페이지 URL
+    var urlToShare = 'http://example.com'; // 여기에 원하는 페이지의 URL을 넣으세요
+
+    // 페이스북 공유 URL
+    var facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(urlToShare);
+
+    // 새 창에서 페이스북 공유 페이지 열기
+    window.open(facebookShareUrl, '_blank');
+}
+</script>
+
+</body>
+</html>
+
